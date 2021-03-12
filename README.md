@@ -14,5 +14,5 @@ As mentioned in the name, this program requires the Qiskit package be installed
 which can be done with the follow command
 
 ```
-	pip install qiskit
+pip install qiskit
 ```
