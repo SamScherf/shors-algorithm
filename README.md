@@ -10,9 +10,8 @@ simulate that hardware using Qiskit's Aer simulator on their classical machine a
 The implementation itself is still yet to come, this version is just a starting point
 
 ## Dependencies
-As mentioned in the name, this program requires the Qiskit package be installed
-which can be done with the follow command
+This program requires the Qiskit, matplotlib, and pylatexenc which can all be installed with the following command
 
 ```
-pip install qiskit
+pip install qiskit matplotlib pylatexenc
 ```
