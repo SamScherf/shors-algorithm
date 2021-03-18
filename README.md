@@ -29,24 +29,24 @@ would expect, implements the quantum circuits required for Shor's algorithm.
 
 At it's core, Shor's algorithm works by turning the problem of factoring a number into a period finding problem then
 involving quantum phase estimation (QPE) to solve for said period and thereby factor the number. To do this, Shor's algorithm
-first and foremost makes use of two import math theorems:
+first and foremost makes use of two import math theorems:  
 
 1. The Euclidean Algorithm (which provides a classical algorithm to find the GCD of two natural numbers)
 2. Euler's Theorem (which says that a^x = 1 (mod N) for some integer x if a and N are co-prime)
 
-The second of thermos, Euler's Theorem, is particularly useful in that by simply subtracting 1 and factoring:
+The second of thermos, Euler's Theorem, is particularly useful in that by simply subtracting 1 and factoring:  
 
-a^x = 1 (mod N)
-a^x - 1 = 0 (mod N)
-(a^(x/2) - 1) * (a^(x/2) + 1) = 0 (mod N)
+a^x = 1 (mod N)  
+a^x - 1 = 0 (mod N)  
+(a^(x/2) - 1) * (a^(x/2) + 1) = 0 (mod N)  
 
 We are able to see that finding an integer x such that a^x = 1 (mod N), we will have a high likelihood of "guessing" a
 factor of N. This is turned into a period finding problem by simply acknowledging that a^0 = 1 (mod N) is a trivial solution
 to this problem and that since (mod N) makes the function periodic, we can simply add the period (which we will call r) to
-the 0 to get a non trivial solution:
+the 0 to get a non trivial solution:  
 
-a^0 = 1 (mod N) and a^0 = a^(0+r) (mod N) therefore
-a^r = 1 (mod N)
+a^0 = 1 (mod N) and a^0 = a^(0+r) (mod N) therefore  
+a^r = 1 (mod N)  
 
 
 ## Dependencies
