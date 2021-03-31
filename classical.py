@@ -3,7 +3,7 @@ file: classical.py
 
 This file implements all the functions needed to interact with the quantum
 circuits implemented in quantum.py and manage all the classical computations
-needed to run shor's algorithm
+needed to run shor's algorithm.
 """
 
 # import math libraries
